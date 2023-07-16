@@ -1,0 +1,21 @@
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if s == "":
+            return 0
+
+        i = 1
+        k = 0
+        strg = s.rstrip()
+        #print(strg,".")
+        for i in range(-1,-len(strg)-1,-1):
+            if(strg[i]==u' '):
+                break
+            #print(strg[i],i)
+            k += 1
+            #print(k)
+        #print("im out")
+        return k
