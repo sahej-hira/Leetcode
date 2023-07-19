@@ -11,14 +11,14 @@ class Solution(object):
         for i in s:
             if i in hash:
                 if stk and stk[-1]==hash[i]:
-                    print("popped")
+                    #print("popped")
                     stk.pop()
                 else:
                     return False
             else:
-                print("append")
+                #print("append")
                 stk.append(i)
         if stk == []:
             return True
-        print(stk)
+        #print(stk)
         return False 
