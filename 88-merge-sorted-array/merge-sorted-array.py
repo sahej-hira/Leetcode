@@ -7,10 +7,10 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        print("entered")
+        #print("entered")
         last = m+n-1
         while n > 0 and m>0 :
-            print(m,n,last)
+            #print(m,n,last)
             if nums1[m-1]>=nums2[n-1]:
                 nums1[last]=nums1[m-1]
                 m-=1
@@ -24,7 +24,7 @@ class Solution(object):
         while n>0:
             nums1[last]=nums2[n-1]
             n,last=n-1,last-1
-            print(nums1)
+            #print(nums1)
         return nums1
 
 
