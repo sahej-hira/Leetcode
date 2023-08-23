@@ -2,7 +2,7 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # using a hashmap?
         l,r = 0,len(nums) - 1 # 1-indexed
-        print(nums[1],nums[len(nums)-1])
+        #print(nums[1],nums[len(nums)-1])
 
         while l < r:
             sum = nums[l] + nums[r]
