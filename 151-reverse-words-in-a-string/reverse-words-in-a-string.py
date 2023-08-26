@@ -9,19 +9,27 @@ class Solution:
         # join() with " "
 
         arr = s.split(" ")  #creating arr
-        print(arr)
+        
         #processing array
         for i in range(len(arr)):
             if '' in arr:
                 arr.remove('')
-                
-        string = " ".join(arr[::-1])
 
-        
+        #string = " ".join(arr[::-1])
+        #return string
 
-        return string
+        return " ".join(arr[::-1]) 
         
         
+        ''' not working
+        news="" # new string
+        for i in range(len(s)):
+            if s[i] != " ":
+                news += s[i]
+            else:
+                news += " "
+        return news[::-1]
+        '''
         
         '''
         ns = s.strip() #new s
