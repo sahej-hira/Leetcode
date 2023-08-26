@@ -12,12 +12,12 @@ class Solution:
         n = 0
         n = len(nums) - k
         head = nums[n:]
-        print(head)
+        #print(head)
         nums[n:],nums[:n] = nums[:n],nums[n:]
 
         
         #nums = nums[n:]+nums[:n]
-        print(nums)
+        #print(nums)
 
         return nums
 
