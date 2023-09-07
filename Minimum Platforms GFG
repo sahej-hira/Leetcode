@@ -1,0 +1,42 @@
+class Solution:    
+    #Function to find the minimum number of platforms required at the
+    #railway station such that no train waits.
+    def minimumPlatform(self,n,arr,dep):
+        # code here
+        arr.sort()          # input lists weren't sorted! 
+        dep.sort()
+        i = 0
+        j = 1
+        plt = 1 # platform
+        mx = 1 # max no. of platforms in use
+        
+        while j < len(arr):
+            if dep[i] >= arr[j]: # train arrived but no platforms are free
+                plt += 1
+                mx = max(plt,mx)
+                j += 1
+            else:   # 1 train has depareted => 1 platform is free
+                i += 1
+                plt -= 1
+        return mx
+            
+        
+        ''' ~ NOT RIGHT didn't even consider the edge cases!..
+        ar = []
+        
+        for i in range(n):
+            ar.append([dep[i],arr[i],i])       # i is the index
+        
+        ar.sort()
+        limit = ar[0][0]
+        minp = 0 # mininum number of platforms
+        
+        for i in range(1,n):
+            if ar[i][0] == ar[i][1]:        # not allowed
+                continue
+            elif limit > ar[i][1]:          # if another train arrives but polatform is occupied
+                minp += 1
+            else:                           #limit <= arr[i][1]     # both allowed!
+                limit = ar[i][0]
+        return minp
+        ''' 
