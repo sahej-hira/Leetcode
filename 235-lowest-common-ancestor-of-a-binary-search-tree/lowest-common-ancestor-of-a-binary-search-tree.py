@@ -10,7 +10,7 @@ class Solution:
         cur = root
 
         while cur:
-            print(cur,p.val,q.val)
+            #print(cur,p.val,q.val)
             if p.val < cur.val and q.val < cur.val:
                 cur = cur.left
             elif p.val > cur.val and q.val > cur.val:
