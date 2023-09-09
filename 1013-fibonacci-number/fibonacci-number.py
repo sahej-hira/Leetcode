@@ -1,10 +1,9 @@
 class Solution:
     def fib(self, n: int) -> int:
+        cache = {} #hashmap
         
-        cache = {}      #hashmap
-        
-        def reoccur(n):         # memorization technique
-            res = 0
+        # memorization technique
+        def reoccur(n):         
             if n in cache:                      #if present in hashmap 
                 return cache[n]
             
@@ -54,3 +53,4 @@ def fib(self, N):
 
     return recur_fib(N)
 '''
+        
