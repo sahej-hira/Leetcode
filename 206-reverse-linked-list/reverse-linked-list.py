@@ -7,6 +7,15 @@ class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head or not head.next:
             return head
+
+        p = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return p
+
+        '''     ITERATIVE APPROACH
+        if not head or not head.next:
+            return head
         temp = head
         nhead = head.next
 
@@ -18,4 +27,5 @@ class Solution:
             nhead= temp.next
 
         return head
+        '''
         
