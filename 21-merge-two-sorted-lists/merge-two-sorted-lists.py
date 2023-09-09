@@ -5,6 +5,23 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+
+        if not list1:
+            return list2
+
+        if not list2:
+            return list1
+
+        if list1.val >= list2.val:
+            list2.next = self.mergeTwoLists(list1,list2.next)
+            return list2
+        else:
+            list1.next = self.mergeTwoLists(list1.next,list2) 
+            return list1
+        
+
+
+        '''     ITERATIVE APPROACH
         # method 1: create a new linked list thru dummy node
         # method 2: in-place modification of a list with the another
 
@@ -31,6 +48,7 @@ class Solution:
         elif list2:
             head.next = list2
         return dummy.next
+        '''
         
 
                 
