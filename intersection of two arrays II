@@ -1,0 +1,18 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+
+        # we want duplicates so hashset can't be used. hence, hashmap
+        # store key(index) => value
+        # values can be duplicate, but not keys
+        cache = {}
+        for i, v in enumerate(nums1):
+            cache[i] = v
+        #print(cache)
+
+        res = [] #resultant array
+        # iterate thru 2nd list and 
+        for i in cache: # i == key
+            if cache[i] in nums2:
+                res.append(cache[i])
+                nums2.remove(cache[i])
+        return res
