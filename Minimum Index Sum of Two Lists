@@ -1,0 +1,30 @@
+class Solution:
+    def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
+
+        # create hashmap for both lists:
+        # iterate thru one list and check if that element exists in the other hashmap
+
+        # or
+
+        # create 1 hashmap and match with the other list
+
+
+        cache = {}
+
+        for i,v in enumerate(list1):
+            cache[v] = i 
+
+        # {word : index}
+        mini = len(list1) + len(list2)         # index
+        el = []        # index
+        for w in range(len(list2)):
+            if list2[w] in cache:
+                cur = w + cache[list2[w]] 
+
+                # the below logic took 2 WEEKS to make sense! 
+                if cur < mini:
+                    el = [list2[w]]         #updating the list
+                    mini = cur
+                elif cur == mini:
+                    el.append(list2[w])         # adding to the list
+        return el
