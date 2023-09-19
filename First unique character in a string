@@ -1,0 +1,37 @@
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        
+        # split
+        # create a hashmap for each char in string
+        # see if more than one copy exists by traversing the list once again
+        
+        # 'keys' in hashmaps are unique - so - it will update the indexes (in values) of the hashmap if duplicate exists
+        
+        # elif cache[key[w]] (value of char) == w (org. index in string ) # return => that is the first unique character in the string.
+
+        cache = {}                      # hashmap
+        for i, v in enumerate(s):
+            cache[v] = i
+            #print(cache)
+
+        w = 0
+        for i in range(len(s)):
+            #print(i,w)
+            if s[i] in cache:
+                if cache[s[i]] == i:
+                    return i
+                else:
+                    del cache[s[i]]
+            #w += 1
+
+        return -1
+        '''
+        for i in cache:
+            print(i,w)
+            if cache[i] == w:
+                return w
+            w += 1
+
+        return -1
+
+        '''
