@@ -1,0 +1,24 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        cache = {}
+
+        # hashmap: key(sorted elements) - value
+
+        for word in strs:
+            res = ''.join(sorted(word))
+            
+            if res in cache:
+                #print("here- im in")
+                # append to the  key
+                cache[res].append(word)
+                continue
+                
+            
+            # add key to hashmap
+            
+            cache[res] = [word]
+            
+            #
+            #print(cache)
+
+        return cache.values()
