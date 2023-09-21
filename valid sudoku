@@ -1,0 +1,29 @@
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        # check for ALL row for duplicates:  return False
+        # check for ALL column for duplicates: return False
+        # lower time complexity compared to vice versa
+        # check for each grid for the whole 9*9 matrix
+        
+        # key can  be any value between 0-9 = value([i][j])
+        
+        rows = collections.defaultdict(set)       # creating a set for default dict
+        cols = collections.defaultdict(set)
+        squares = collections.defaultdict(set)      #row//3,cols//3
+
+
+        for r in range(9):
+            for c in range(9):
+                if board[r][c] == '.':
+                    continue
+
+                # checking if values exist in the set(s) already => duplication
+                if board[r][c] in rows[r] or board[r][c] in cols[c] or board[r][c] in squares[r//3,c//3]:
+                    return False
+
+                # if not present in set: we add to sets
+                rows[r].add(board[r][c])
+                cols[c].add(board[r][c])
+                squares[(r//3,c//3)].add(board[r][c])
+
+        return True
