@@ -1,0 +1,25 @@
+# convert given integer into binary
+# reverse the given binary representation
+## take one num at a time
+# binary -> decimal
+# return decimal obtained in last step
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        binary = ""
+        binary = self.tobinary(n,binary)
+        binary = binary.zfill(32)
+        rev = binary[::-1]
+        ans = int(rev,2)
+        #print("n:",n,"binary:",binary,"rev:",rev,"ans:",ans)
+        return ans
+
+
+
+
+    def tobinary(self,n,binary):
+        while n > 0:
+            binary = str(n%2) + binary
+            n //= 2
+        return binary
+
+
