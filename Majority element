@@ -15,3 +15,5 @@ class Solution:
         for key in dic:
             if val == dic.get(key):
                 return key
+
+# can use MOORE VOTING ALGORITHM.
