@@ -1,0 +1,40 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+
+#dfs
+
+# iterate through every node
+# increment the count variable
+
+class Solution:
+    def countNodes(self, root: Optional[TreeNode]) -> int:
+        count = 0
+        
+        def dfs(node):
+            nonlocal count
+            if not node:
+                return 0
+            
+            count += 1
+
+            dfs(node.left)
+            dfs(node.right)
+            #return count
+
+        dfs(root)
+        return count
+
+'''
+# how is dfs returning the value of dfs without a return statement?
+The `nonlocal` keyword is used to indicate that a variable is defined in an outer scope and should be updated by a nested function.
+When the `dfs()` function is called recursively, each call updates the value of `count` in the outer scope. When the final call to `dfs()` returns, the updated value of `count` is returned implicitly by the `countNodes()` function.
+
+Therefore, the `dfs()` function is indirectly returning the value of `count` without an explicit `return` statement.
+
+'''
+
