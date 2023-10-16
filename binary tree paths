@@ -1,0 +1,29 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+# acc. to the req. solution dfs is to be implemented
+# and append el to list
+# return list
+
+
+
+class Solution:
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        arr = []
+        # node, arr(output), str(els of arr)
+        def dfs (node,nval):
+            if not (node.left or node.right):
+                arr.append("->".join(nval))
+                return 
+            
+            if node.left:
+                dfs(node.left,nval + [str(node.left.val)])
+            if node.right:
+                dfs(node.right,nval + [str(node.right.val)])
+        
+        dfs(root,[str(root.val)])
+        return arr
