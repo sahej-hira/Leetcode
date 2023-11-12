@@ -6,12 +6,13 @@ class Solution:
         r = 1
         diff = 0 #prices[r] - prices[l] 
         for i in range(1,len(prices) ):
+            
+
             if prices[l] > prices[i - 1]:
                l = i - 1
                r = i 
             elif prices[r] < prices[i]:
                 r = i 
-
-            diff = max(prices[r] - prices[l] if diff >= 0 else 0,diff)
+            diff = max(prices[r] - prices[l],diff)
             #print("l:",l,"r:",r,"diff:",diff,"prices[r]",prices[r])
         return diff
