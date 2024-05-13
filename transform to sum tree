@@ -1,0 +1,63 @@
+#User function Template for python3
+
+'''
+# Node Class:
+class Node:
+    def __init__(self,val):
+        self.data = val
+        self.left = None
+        self.right = None
+'''
+class Solution:
+    def toSumTree(self, root) :
+        #code here
+        ## dfs
+        
+        #def dfs(node):
+        # base condition
+        if not root: 
+            return 0         # node.val?
+        
+        
+        val = root.data                             # store the value of the node:
+        
+        # recusive condition:
+        leftsubtree = self.toSumTree(root.left)
+        rightsubtree = self.toSumTree(root.right)
+        
+        root.data = leftsubtree + rightsubtree 
+        # else:                                           #if not node.left and not node.right:
+        #     node.data = 0
+            
+        return root.data + val          # what we want to return from each level
+        #return dfs(root)
+            
+            
+            
+        '''
+        def toSumTree(self, root) :
+            #code here
+            ## dfs
+            
+            #def dfs(node):
+                # base condition
+                if not node: 
+                    return 0         # node.val?
+                
+                
+                val = node.data                             # store the value of the node:
+                
+                # recusive condition:
+                leftsubtree = toSumTree(node.left)
+                rightsubtree = toSumTree(node.right)
+                
+                node.data = leftsubtree + rightsubtree 
+                # else:                                           #if not node.left and not node.right:
+                #     node.data = 0
+                    
+                return node.data + val          # what we want to return from each level
+            #return dfs(root)
+                
+            
+            
+        '''
