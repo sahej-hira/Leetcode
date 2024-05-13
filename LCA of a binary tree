@@ -1,0 +1,34 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        # my approach:
+        # locate p and q nodes
+        # find the path from root to p and path from root to q and save those 2 in a list
+        # find the last common element among them (first common element from rhs) and return it
+        
+        # prefered appraoch:
+        # if root.data == p/q:return p/q
+        # else: return null
+        # if no null is returned to the root, root is the lca
+        # else, whichever num ( p or q) is received at the root, is the lca
+
+        # base base:
+        if not root:
+            return None
+        if root == p or root == q:  # while traversing if any value equals p or q return it to the above level
+            return root
+
+        l = self.lowestCommonAncestor(root.left,p,q)
+        r = self.lowestCommonAncestor(root.right,p,q)
+
+        # the two possible cases for this problem:
+        if l and r:
+            return root
+        else:
+            return l or r
