@@ -6,21 +6,29 @@
 #         self.right = right
 class Solution:
     def bstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
-        
-        def constructbst(preorder,start,end):
-            if start > end:
-                return None
+        # preorder travesel: root left right
 
+        # recursive case: dfs :
+        
+        def create(preorder, start, end):
+            if start > end:
+                return None     # None
+
+            
             root = TreeNode(preorder[start])
             i = start + 1
-            
-            while i <= end and preorder[i] <= root.val:
+
+            # all the values in the leftsubtree will be smaller than the root.val
+            while i <= end  and preorder[i] < root.val:
                 i += 1
-            root.left = constructbst(preorder,start + 1, i - 1)
-            root.right = constructbst(preorder, i, end)
+
+            root.left = create(preorder, start + 1, i - 1)
+            root.right = create(preorder, i, end)
+        
             return root
-
-        return constructbst(preorder,0,len(preorder) - 1)
-
             
             
+
+        return create(preorder, 0, len(preorder) - 1)
+            
+        
