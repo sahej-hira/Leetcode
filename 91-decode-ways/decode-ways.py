@@ -17,7 +17,7 @@ class Solution:
             # if the present element was 1 or 2 
             # and the next element is between 0-6
             # because there are ONLY 26 alphabets in englsih alphabets.
-            if (i + 1 < len(s) and (s[i] == "1" or s[i] == "2" and s[i + 1] in "0123456")):
+            if (i + 1 < len(s) and (s[i] == "1" or s[i] == "2" and s[i + 1] in "0123456")):     # paranthesis MATTER
                 res += dfs(i + 2)
             # add to cache:
             dp[i] = res
