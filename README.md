@@ -30,6 +30,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0890-lemonade-change](https://github.com/shark-lamp/Leetcode/tree/master/0890-lemonade-change) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -42,4 +43,8 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+## Greedy
+|  |
+| ------- |
+| [0890-lemonade-change](https://github.com/shark-lamp/Leetcode/tree/master/0890-lemonade-change) |
 <!---LeetCode Topics End-->
