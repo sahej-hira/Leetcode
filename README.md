@@ -13,6 +13,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [2025-redistribute-characters-to-make-all-strings-equal](https://github.com/shark-lamp/Leetcode/tree/master/2025-redistribute-characters-to-make-all-strings-equal) |
 ## Counting
 |  |
@@ -21,6 +22,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Math
 |  |
 | ------- |
+| [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/shark-lamp/Leetcode/tree/master/2645-pass-the-pillow) |
 ## Simulation
@@ -38,6 +40,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 ## Trie
 |  |
 | ------- |
@@ -46,6 +49,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 ## Greedy
 |  |
 | ------- |
@@ -53,6 +57,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Recursion
 |  |
 | ------- |
+| [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Queue
 |  |
