@@ -1,27 +1,30 @@
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-
-        res = []  # output list
+        ans = []
         nums.sort()
 
+        # use recursion
         def backtrack(i, subset):
+            # base condition:
             if i == len(nums):
-                res.append(subset[::])
+                ans.append(subset[::])  # append the copy of the subset to the ans/output array
+                return
 
-                return 
+            ### to avoid duplicates:
 
-            #all subset thta include nums[i]
-            subset.append(nums[i])
-            backtrack(i+1,subset)
+            ## recursive condition:
+            # if the subsets are to contain num[i]  ( to be added for the first time only):
+            subset.append(nums[i])           # add num[i]
+            backtrack( i + 1, subset)
             subset.pop()
 
-
-            # all subsets that do not include nums[i]
-            while i + 1 < len(nums) and nums[i] == nums[i + 1]:
+            # if the subset do not contain num[i]:
+            # skip all the indices that have the same number i.e num[i] - to avoid duplication
+            while i + 1 < len(nums) and nums[i] == nums[i + 1]:       # while the next index is not out of bounds and has the sam evalue
                 i += 1
-            backtrack( i + 1,subset)
-        backtrack(0,[])
-        return res
-    
-    
-        
+            backtrack(i + 1, subset)
+
+        backtrack(0, [])        # calling the recursive function
+        return ans              # return the output
+
+
