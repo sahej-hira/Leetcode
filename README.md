@@ -33,6 +33,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Array
 |  |
 | ------- |
+| [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
 | [0890-lemonade-change](https://github.com/shark-lamp/Leetcode/tree/master/0890-lemonade-change) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -63,4 +64,12 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Backtracking
+|  |
+| ------- |
+| [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 <!---LeetCode Topics End-->
