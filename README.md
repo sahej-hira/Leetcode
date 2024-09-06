@@ -12,6 +12,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## String
 |  |
 | ------- |
+| [0008-string-to-integer-atoi](https://github.com/shark-lamp/Leetcode/tree/master/0008-string-to-integer-atoi) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
 | [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [2025-redistribute-characters-to-make-all-strings-equal](https://github.com/shark-lamp/Leetcode/tree/master/2025-redistribute-characters-to-make-all-strings-equal) |
