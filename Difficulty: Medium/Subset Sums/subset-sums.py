@@ -3,7 +3,7 @@ class Solution:
 	def subsetSums(self, arr, n):
 		# code 
 		ans = [0,]
-		arr.sort()
+		#arr.sort()
 		for i in range(n):
 		    x = len(ans)
 		    ans.append(arr[i])
