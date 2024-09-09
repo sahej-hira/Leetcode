@@ -1,23 +1,17 @@
-# by is decreased by a factor of 2
-
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        #print("x:",x,"n:",n)
-        if n == 0:
-            return 1
-        if n == 1:
-            return x
-        elif n < 0:
-            return 1/self.myPow(x,-n)
-        else:
-            # even power(n):
-            if n % 2 == 0:
-                return self.myPow( x*x, n//2)
+        def pow(x,n):       # a wrapper so we dont pass in a negative power 
+            # base conditions:
+            if n == 0:
+                return 1
+            if x == 0:
+                return 0
+            
+            # recursive condition:
+            res =  pow(x*x,n//2)
+            return x*res if n %2 else res
 
-            # odd power(n):
-            else:
-                return x*self.myPow(x*x, (n - 1)//2)
-
-
-
+        # outside of the function
+        res = pow(x, abs(n))    # pasing in ONLY positive power (of x)
+        return res if n >= 0 else 1/res     # handling the case of negative power
         
