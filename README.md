@@ -23,6 +23,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Math
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/shark-lamp/Leetcode/tree/master/0050-powx-n) |
 | [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/shark-lamp/Leetcode/tree/master/2645-pass-the-pillow) |
@@ -59,6 +60,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/shark-lamp/Leetcode/tree/master/0050-powx-n) |
 | [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Queue
