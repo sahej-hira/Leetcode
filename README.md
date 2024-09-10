@@ -25,6 +25,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 | ------- |
 | [0050-powx-n](https://github.com/shark-lamp/Leetcode/tree/master/0050-powx-n) |
 | [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
+| [0445-add-two-numbers-ii](https://github.com/shark-lamp/Leetcode/tree/master/0445-add-two-numbers-ii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2050-count-good-numbers](https://github.com/shark-lamp/Leetcode/tree/master/2050-count-good-numbers) |
 | [2645-pass-the-pillow](https://github.com/shark-lamp/Leetcode/tree/master/2645-pass-the-pillow) |
@@ -77,4 +78,12 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
+## Linked List
+|  |
+| ------- |
+| [0445-add-two-numbers-ii](https://github.com/shark-lamp/Leetcode/tree/master/0445-add-two-numbers-ii) |
+## Stack
+|  |
+| ------- |
+| [0445-add-two-numbers-ii](https://github.com/shark-lamp/Leetcode/tree/master/0445-add-two-numbers-ii) |
 <!---LeetCode Topics End-->
