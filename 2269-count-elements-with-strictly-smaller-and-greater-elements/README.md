@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements">2269. Count Elements With Strictly Smaller and Greater Elements </a></h2><h3>Easy</h3><hr><p>Given an integer array <code>nums</code>, return <em>the number of elements that have <strong>both</strong> a strictly smaller and a strictly greater element appear in </em><code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements">Count Elements With Strictly Smaller and Greater Elements </a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an integer array <code>nums</code>, return <em>the number of elements that have <strong>both</strong> a strictly smaller and a strictly greater element appear in </em><code>nums</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
