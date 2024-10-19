@@ -5,7 +5,9 @@ class Solution:
      #that element  
 
      ## implement binary search
-     l,r = 1,max(nums)
+     
+     # fixing upper and lower bound (to search for the value in)
+     l,r = 1,max(nums)  # represents smallest possible value for mid, the largest possible value for mid variable
 
      while l <= r:
         mid = (l + r)//2
