@@ -8,6 +8,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [2025-redistribute-characters-to-make-all-strings-equal](https://github.com/shark-lamp/Leetcode/tree/master/2025-redistribute-characters-to-make-all-strings-equal) |
 ## String
 |  |
@@ -27,6 +28,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 | [0050-powx-n](https://github.com/shark-lamp/Leetcode/tree/master/0050-powx-n) |
 | [0241-different-ways-to-add-parentheses](https://github.com/shark-lamp/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0445-add-two-numbers-ii](https://github.com/shark-lamp/Leetcode/tree/master/0445-add-two-numbers-ii) |
+| [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2050-count-good-numbers](https://github.com/shark-lamp/Leetcode/tree/master/2050-count-good-numbers) |
 | [2645-pass-the-pillow](https://github.com/shark-lamp/Leetcode/tree/master/2645-pass-the-pillow) |
@@ -40,6 +42,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 | ------- |
 | [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
+| [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0890-lemonade-change](https://github.com/shark-lamp/Leetcode/tree/master/0890-lemonade-change) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/shark-lamp/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -97,4 +100,8 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/shark-lamp/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+## Prefix Sum
+|  |
+| ------- |
+| [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
 <!---LeetCode Topics End-->
