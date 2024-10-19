@@ -41,6 +41,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 | [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
 | [0890-lemonade-change](https://github.com/shark-lamp/Leetcode/tree/master/0890-lemonade-change) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/shark-lamp/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shark-lamp/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/shark-lamp/Leetcode/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 ## Dynamic Programming
@@ -92,4 +93,8 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/shark-lamp/Leetcode/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
+## Binary Search
+|  |
+| ------- |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/shark-lamp/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 <!---LeetCode Topics End-->
