@@ -1,5 +1,28 @@
 class Solution:
     def clumsy(self, n: int) -> int:
+        stk = []        # stack to hold intermediate result to maintaint he proper order of opertions functions (BODMAS)
+        operationsToApply = ["*","/","+","-"]
+        j = 0           # iterator for operationsToApply array
+
+        stk.append(n)
+        n -= 1
+
+        while n > 0:
+            op = operationsToApply[j]
+            
+            if op == "*":
+                stk[-1] *= n
+            elif op == "/":
+                stk[-1] = int(stk[-1]/n)
+            elif op == "+":
+                stk.append(n)
+            elif op == "-":
+                stk.append(-n)
+            n -= 1
+            j = (j + 1) % 4
+
+        return sum(stk)
+        '''
         stack = []  # Stack to hold intermediate results
         operations = ["*", "/", "+", "-"]
         j = 0  # Tracks the current operation index
@@ -22,6 +45,7 @@ class Solution:
             j = (j + 1) % 4  # Rotate through the operations
 
         return sum(stack)
+        '''
 
 
 
