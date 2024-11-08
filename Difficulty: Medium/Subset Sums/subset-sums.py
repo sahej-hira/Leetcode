@@ -1,16 +1,38 @@
 #User function Template for python3
 class Solution:
-	def subsetSums(self, arr, n):
-		# code 
-		ans = [0,]
-		#arr.sort()
-		for i in range(n):
-		    x = len(ans)
-		    ans.append(arr[i])
-		    for y in range(1,x):
-		        ans.append(arr[i] + ans[y])
-		return ans
 
+	def findsubset(self, i, arr, res, add, n):
+	    
+	    ###### base condition:
+	    if i == n:
+	        res.append(add)
+	        return 
+	        
+	    ###### recursive condiiton
+	    # to pick:
+	    self.findsubset(i + 1, arr, res, add + arr[i], n)
+	    
+	    # not to pick:
+	    self.findsubset(i + 1, arr, res, add, n)
+
+
+
+	def subsetSums(self, arr, n):
+		# code here
+		res = []
+		add = 0
+		arr.sort()
+		self.findsubset(0,arr, res, add, n)
+		return res
+		
+		
+
+	    
+	        
+	   
+	    
+
+		
 
 #{ 
  # Driver Code Starts
