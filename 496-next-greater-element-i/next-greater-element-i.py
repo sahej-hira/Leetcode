@@ -10,9 +10,10 @@ class Solution:
         print(cache)
         # now we have: {4:0, 1:1, 2:2}  (element: index)
 
-        res = []        # resultant array (output)
-        for i in range(len(nums1)):
-            res.append(-1)
+        res = [-1] * len(nums1)  # resultant array (output) 
+        # res = []        # resultant array (output)
+        # for i in range(len(nums1)-1):
+        #     res.append(-1)
 
         stk = [] # stack
         for num in nums2:
