@@ -7,6 +7,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shark-lamp/Leetcode/tree/master/0001-two-sum) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
 | [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [2025-redistribute-characters-to-make-all-strings-equal](https://github.com/shark-lamp/Leetcode/tree/master/2025-redistribute-characters-to-make-all-strings-equal) |
@@ -40,6 +41,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shark-lamp/Leetcode/tree/master/0001-two-sum) |
 | [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
 | [0523-continuous-subarray-sum](https://github.com/shark-lamp/Leetcode/tree/master/0523-continuous-subarray-sum) |
