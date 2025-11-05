@@ -42,6 +42,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/shark-lamp/Leetcode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/shark-lamp/Leetcode/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/shark-lamp/Leetcode/tree/master/0031-next-permutation) |
 | [0090-subsets-ii](https://github.com/shark-lamp/Leetcode/tree/master/0090-subsets-ii) |
 | [0139-word-break](https://github.com/shark-lamp/Leetcode/tree/master/0139-word-break) |
@@ -98,6 +99,7 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/shark-lamp/Leetcode/tree/master/0015-3sum) |
 | [2269-count-elements-with-strictly-smaller-and-greater-elements](https://github.com/shark-lamp/Leetcode/tree/master/2269-count-elements-with-strictly-smaller-and-greater-elements) |
 ## Binary Search
 |  |
@@ -110,5 +112,6 @@ Most with the best efficient solutions except for the once where i used recursiv
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/shark-lamp/Leetcode/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/shark-lamp/Leetcode/tree/master/0031-next-permutation) |
 <!---LeetCode Topics End-->
