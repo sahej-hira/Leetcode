@@ -1,29 +1,17 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        maxsum = nums[0]
+        # kadane's algo resets cursum to 0 everytime the value gets negative. 
+        # but it only works when the array consists of positive integers and 0
+        # unlike now, when the array contains all integers.
+        if len(nums) == 1:
+            return nums[0]
+
+        maxsum = (-inf)
         cursum = 0
-
-        for n in nums:
-            if cursum<0:
-                cursum = 0
-            cursum += n
-            maxsum = max(maxsum,cursum)
-        return maxsum
-
-        '''
-        # sliding window approach
-
-        l,r = 0,1
-        msum = nums[0]
-        for r in range(len(nums) - 1):
-            if msum + nums[r] < 0:
-                l += 1
-
-            if msum + nums[r] < msum:
-        '''
-
-
-
+        subarr = []
+        for i in range(len(nums)):
+            cursum += nums[i]
             
-
-        
+            maxsum = max(maxsum, cursum)
+            cursum = max(cursum, 0)
+        return maxsum
