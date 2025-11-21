@@ -1,23 +1,28 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-
+        # no duplicates in soln -> n + 1 in both recursion steps
+        res = []
         candidates.sort()
 
-        res = []
-        def backtrack(cur, pos , target):
-            if target == 0 :
-                res.append(cur.copy())  # .copy() is used to create a shallow copy of a large array
-            if target <= 0:
-                return
+        def dfs(i , combination, sumofsubarr):
+            # base steps:
+            if sumofsubarr == target:
+                res.append(combination.copy())
+                return 
+            if i >= len(candidates) or sumofsubarr > target:
+                return # move on to next elements since the present ones do not satisfy the condition
 
-            prev = -1
-            for i in range(pos,len(candidates)):
-                if candidates[i] == prev:
-                    continue
-                cur.append(candidates[i])
-                backtrack(cur, i + 1, target - candidates[i])
-                cur.pop()
-                prev = candidates[i]
-        backtrack([],0,target)
+            # reusion steps:
+            combination.append(candidates[i])
+            dfs(i + 1, combination, sumofsubarr + candidates[i]) # no duplicates allowed, move forward
+            # backtracking step:
+            combination.pop()
+            idx = i + 1
+            while idx < len(candidates) and candidates[idx - 1] == candidates[idx]:
+                idx += 1
+            dfs(idx, combination, sumofsubarr)
+
+        dfs(0,[],0)
         return res
-            
+
+        
